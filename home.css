@@ -1177,10 +1177,16 @@ img {
   overflow: hidden;
   transition: opacity 0.2s, visibility 0.75s;
   z-index: 1001;
+  
+}
+.loader::before {
+  content: url("image/loader.svg");
+  display: none;
 }
 .loader--hidden {
   opacity: 0;
   visibility: hidden;
+  background-image: none;
 }
 .l-text {
   fill: black;
