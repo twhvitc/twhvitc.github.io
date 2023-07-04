@@ -1,0 +1,83 @@
+.header {
+    min-height: 75vh;
+    overflow-y: hidden;
+}
+.text-box h1 {
+    font-size: 45px;
+  }
+.text-box p {
+    font-size: 14px;
+}
+  .heading{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 25%;
+}
+.heading h3{
+    font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+}
+.heading h3 span{
+    font-weight: 300;
+}
+
+/* section main */
+.main1{
+    width: 90%;
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 20px 0 20px;
+}
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .col{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.container .box .col img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 769px){
+    .main1{
+        width: 100%;
+    }
+    .container{
+        margin-top: 20px;
+    }
+    .container .box{
+        flex-direction: column;
+    }
+    .container .box .col{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 945px){
+    .heading{
+        width: 30%;
+    }
+    .heading h3{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 590px){
+    .heading{
+        width: 70%;
+    }
+}
