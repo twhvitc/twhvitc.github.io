@@ -1,110 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Department</title>
-    <link rel="icon" href="image/t_logo.png" type="image/icon type" />
-    <link rel="stylesheet" href="CSS/depart.css">
-    <link rel="stylesheet" href="CSS/main.css" />
-    <link rel="stylesheet" href="CSS/depart.css">
-    <link rel="stylesheet" href="file/aos/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap"
-    />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Department</title>
+  <link rel="icon" href="image/t_logo.webp" type="image/icon type" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="stylesheet" href="CSS/depart.css">
+  <link rel="stylesheet" href="file/aos/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" />
 
-  <body>
-    <!--loader-->
-    <div class="loader">
-      <svg class="l-svg" xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 500 500">
-          <defs>
-              <path id="textcircle" d="M250,400
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+</head>
+
+<body>
+  <!--loader-->
+  <div class="loader">
+    <svg class="l-svg" xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 500 500">
+      <defs>
+        <path id="textcircle" d="M250,400
                      a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
-          </defs>
-          <g class="textcircle">
-              <text class="l-text" textLength="940">
-                  <textPath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textLength="940">
-                      Observe&#160;&#160;Contribute&#160;&#160;Change&#160;&#160;
-                  </textPath>
-              </text>
-          </g>
-      </svg>
+      </defs>
+      <g class="textcircle">
+        <text class="l-text" textLength="940">
+          <textPath xlink:href="#textcircle" aria-label="CSS & SVG are awesome" textLength="940">
+            Observe&#160;&#160;Contribute&#160;&#160;Change&#160;&#160;
+          </textPath>
+        </text>
+      </g>
+    </svg>
   </div>
-    <!--header-->
-    <section class="header">
-      <nav>
-        <a href="index.html"><img src="image/logo.png" /></a>
-        <div class="nav-links" id="navLinks">
-          <div class="mh-link">
-            <h2>
-              The White<br />
-              Helmets
-            </h2>
-            <i class="fa fa-times" id="fa-times" onclick="hideMenu()"></i>
-          </div>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="index.html#about">ABOUT</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="">DEPARTMENT</a></li>
-            <li><a href="alumni.html">ALUMNI</a></li>
-            <li><a href="index.html#contact">CONTACT</a></li>
-          </ul>
+  <!-- Mouse cursor -->
+  <div class="trailer" id="trailer"></div>
+  <script src="file/JS/main.js"></script>
+  <!--header-->
+  <section class="header">
+    <nav>
+      <a class="interactable" href="index.html"><img src="image/logo.webp" /></a>
+      <div class="nav-links" id="navLinks">
+        <div class="mh-link">
+          <h2>
+            The White<br />
+            Helmets
+          </h2>
+          <i class="fa fa-times" id="fa-times" onclick="hideMenu()"></i>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-        <div class="wrapper">
-          <button class="l-btn">
-            <i class="ri-share-line"></i>
-          </button>
-          <ul class="list">
-            <li class="item">
-              <a href="https://www.instagram.com/twh_vitc/" target="_blank" class="link ig">
-                <i class="ri-instagram-line"></i>
-              </a>
-            </li>
-            <li class="item" style="--d: 0.25s">
-              <a href="https://www.linkedin.com/company/the-white-helmets-vit-chennai/" target="_blank" class="link tw">
-                <i class="ri-linkedin-box-line"></i>
-              </a>
-            </li>
-            <li class="item" style="--d: 0.5s">
-              <a href="mailto:thewhitehelmets.vitc@gmail.com" target="_blank" class="link sc">
-                <i class="ri-mail-line"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="text-box" >
-        <h1> Our Service Coordinators </h1><br>  
-        <p>The exceptional quality of our Volunteerism is derived <br> from the individual strengths exhibited by each team member, <br> which collectively make us stand out</p>
-        <br>
-        <h2>Recruitement Result</h2>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="events.html">EVENTS</a></li>
+          <li><a href="">DEPARTMENT</a></li>
+          <li><a href="alumni.html">ALUMNI</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+      <div class="wrapper">
+        <button class="l-btn">
+          <i class="ri-share-line"></i>
+        </button>
+        <ul class="list">
+          <li class="item">
+            <a href="https://www.instagram.com/twh_vitc/" target="_blank" class="link ig">
+              <i class="ri-instagram-line"></i>
+            </a>
+          </li>
+          <li class="item" style="--d: 0.25s">
+            <a href="https://www.linkedin.com/company/the-white-helmets-vit-chennai/" target="_blank" class="link tw">
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+          </li>
+          <li class="item" style="--d: 0.5s">
+            <a href="mailto:thewhitehelmets.vitc@gmail.com" target="_blank" class="link sc">
+              <i class="ri-mail-line"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="text-box">
+      <div class="heading">
+        <h1 class="interactable"> Our Service Coordinators </h1>
+      </div><br>
+      <p>The exceptional quality of our Volunteerism is derived <br> from the individual strengths exhibited by each
+        team member, <br> which collectively make us stand out</p>
+      <br>
+      <!-- <h2>Recruitement Result</h2>
         <div class="au-btn">
           <a class="btn" style="text-decoration: none" href="members.html">
             <span class="icon">
@@ -112,674 +105,655 @@
             </span>
             <span class="text">Result</span>
           </a>
+        </div> -->
+    </div>
+
+  </section>
+
+  <section class="s2">
+    <main id="main">
+      <h1 class="role" data-aos="fade-up">Faculty Coordinator</h1>
+      <!--Faculty Coordinator - 1-->
+      <div class="row">
+        <div class="card" data-aos="fade-up">
+          <img src="image/dept/faculty.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="#" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Dr. Balasundaram A</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Faculty Coordinator
+            </p>
+            <p data-splitting="">
+              <br>Even if you don't see the<br>results of your efforts today,<br>you have planted the seeds<br>for a
+              lifetime of awareness<br><br>
+            </p>
+          </div>
         </div>
       </div>
-      
-    </section>
-
-    <section class="s2">
-      <main id="main">
-        <h1 class="role" data-aos="fade-up">Faculty Coordinator</h1>
-        <!--Faculty Coordinator - 1-->
-        <div class="row">
-          <div class="card" data-aos="fade-up">
-            <img
-              src="image/dept/faculty.jpg"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="#" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Dr. Balasundaram A</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Faculty Coordinator
-              </p>
-              <p data-splitting="">
-                <br>Even if you don't see the<br>results of your efforts today,<br>you have planted the seeds<br>for a lifetime of awareness<br><br>
-              </p>
-            </div>
+      <br /><br />
+      <h1 class="role" data-aos="fade-up">Club Executives</h1>
+      <!--president - 1-->
+      <div class="row">
+        <div class="card" data-aos="fade-up">
+          <img src="image/dept/president.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/_m_y_s_t_e_r_io?igshid=MzRlODBiNWFlZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Arnab Nayak</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              President
+            </p>
+            <p data-splitting="">
+              <br> Edify integrity <br> Seek excellence <br> Strive for perfection<br><br><br>
+            </p>
           </div>
         </div>
-        <br /><br />
-        <h1 class="role" data-aos="fade-up">Club Executives</h1>
-        <!--president - 1-->
-        <div class="row">
-          <div class="card" data-aos="fade-up">
-            <img
-              src="image/dept/president.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/_m_y_s_t_e_r_io?igshid=MzRlODBiNWFlZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Arnab Nayak</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                President
-              </p>
-              <p data-splitting="">
-               <br> Edify integrity <br> Seek excellence <br> Strive for perfection<br><br><br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!--vice president, general secretary - 2-->
-        <div class="row">
-          <div class="card" data-aos="fade-right">
-            <img
-              src="image/dept/vice-pre.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/_manas09_?igshid=MzRlODBiNWFlZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Manas Choudhary</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Vice President
-              </p>
-              <p data-splitting="">
-                <br>Influencing and <br> empowering others and <br>inspiring trust and <br>confidence.<br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-left">
-            <img
-              src="image/dept/gen-sec.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/_.shrad_dhaa._?igshid=MzNlNGNkZWQ4Mg" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2  style="font-size: 23px;">Shradha Suman Jena</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                General Secretary
-              </p>
-              <p data-splitting="">
-                <br>Always ready to wrap the <br> teammates with respect,<br> dedication and passion<br> to make us better<br><br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br /><br />
-        <!-- advisory, advisory, advisory - 3-->
-        <h1 class="role" data-aos="zoom-out">Advisory</h1>
-        <div class="row1">
-          <div class="card" data-aos="fade-right">
-            <img
-              src="image/dept/adv-1.jpeg"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="#" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Ishika Agarwal</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Advisory 
-              </p>
-              <p data-splitting="">
-                <br>The worst mistakes are <br>the best advices one can <br>learn from.<br><br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="zoom-out">
-            <img
-              src="image/dept/adv-2.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="#" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Shashank Pandey</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Advisory 
-              </p>
-              <p data-splitting="">
-                <br>It's always the best <br>advice when it comes <br>with love, respect and <br>hope for success <br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-left">
-            <img
-              src="image/dept/adv-3.jpg"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="#" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Saanjhi Saraogi</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Advisory 
-              </p>
-              <p data-splitting="">
-                <br>Never be scared to try <br>something new because if <br>you only stick to what you<br>are familiar with, life will <br>become monotonous <br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br /><br />
-        <h1 class="role" data-aos="zoom-out">Core Committee</h1>
-        <!--management, content, content - 3 -->
-        <div class="row1">
-          <div class="card" data-aos="fade-right">
-            <img
-              src="image/dept/manage.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/aditi_srivastava20?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Aditi Srivastava</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Management Head
-              </p>
-              <p data-splitting="">
-                <br>If you want to RUN the <br> DAY before the DAY RUNS <br> you, make management <br> your obsession <br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="zoom-out">
-            <img
-              src="image/dept/cont-1.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/abinaya_0702?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Abinaya</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Content Head
-              </p>
-              <p data-splitting="">
-                <br>Good content isn't about <br> storytelling. It's <br> about telling a true story <br> well <br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-left">
-            <img
-              src="image/dept/cont-2.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/shinjinii.___?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Shinjini Paul</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Content Head
-              </p>
-              <p data-splitting="">
-                <br>Always create content <br> that reaches your <br> audience's audience <br><br><br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!--marketing, social, outreach  - 3 -->
-        <div class="row1" data-aos="fade-up">
-          <div class="card" data-aos="fade-down-right">
-            <img
-              src="image/dept/market.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/tanmayb26?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Tanmay Bopache</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Marketing Head
-              </p>
-              <p data-splitting="">
-                <br>Successful marketing is <br> not about being first, it's <br> about being different <br><br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="zoom-out-down">
-            <img
-              src="image/dept/social.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/_.aww.thor.wow._?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2 style="font-size: 23px;">Atharva Deorukhkar</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Social Media Head
-              </p>
-              <p data-splitting="">
-                <br>Social media is not just <br> about creating content, <br> it's about creating <br> relationships <br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-down-left">
-            <img
-              src="image/dept/outr.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/_.chirag._.g?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Chirag Gupta</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Outreach Head
-              </p>
-              <p data-splitting="">
-                <br>Don't wait for some other <br> person or some other time. <br> We are the ones we've <br> been waiting for. We are the <br> change that we seek
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!-- design, design - 2-->
-        <div class="row" data-aos="fade-up">
-          <div class="card" data-aos="fade-down-right">
-            <img
-              src="image/dept/des-1.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/ashnasachdeva27?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Ashna Sachdeva</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Design Head
-              </p>
-              <p data-splitting="">
-                <br>Every great design <br> begins with an even <br> better story <br><br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-down-left">
-            <img
-              src="image/dept/des-2.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://instagram.com/ughitskash?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="#" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="#" class="link1 tw1">
-                    <i class="ri-twitter-line"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Kashish Rajbhar</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Design Head 
-              </p>
-              <p data-splitting="">
-                <br>Styles come and go. <br> Good design is a <br> language, not a style <br><br><br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-        <!--Web Dev - 2-->
-        <h1 class="role" data-aos="zoom-out">Developers</h1>
-        <div class="row" data-aos="fade-up">
-          <div class="card" data-aos="fade-down-right">
-            <img
-              src="image/dept/web-1.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://www.instagram.com/_thenameis_vinoth_/" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="https://www.linkedin.com/in/vinoth-kanna-m-m-235ab5228" target="_blank" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="https://github.com/vinothkanna273" target="_blank" class="link1 gh1">
-                    <i class="ri-github-fill"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Vinoth Kanna M M</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Web Developer
-              </p>
-              <p data-splitting="">
-                <br>There are two ways to write <br>error-free programs; <br> only the third one works<br><br><br>
-              </p>
-            </div>
-          </div>
-          <div class="card" data-aos="fade-down-left">
-            <img
-              src="image/dept/web-2.png"
-            />
-            <div class="link-r">
-              <ul class="list1">
-                <li class="item1">
-                  <a href="https://www.instagram.com/mohanraj.e28/" target="_blank" class="link1 ig1">
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.25s">
-                  <a href="https://www.linkedin.com/in/mohanraj-e-b4295b248" target="_blank" class="link1 li1">
-                    <i class="ri-linkedin-box-line"></i>
-                  </a>
-                </li>
-                <li class="item1" style="--d: 0.5s">
-                  <a href="https://github.com/MOHANRAJE28" target="_blank" class="link1 gh1">
-                    <i class="ri-github-fill"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="text">
-              <h2>Mohanraj E</h2>
-              <p data-splitting="" style="font-size: 20px; font-weight: 700">
-                Web Developer
-              </p>
-              <p data-splitting="">
-                <br>Code is like humor. <br> When you have to explain it, <br> it's bad <br><br><br>
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <script>
-        Splitting();
-      </script>
-    </section>
-
-    <section class="footer">
-      <h4>The White Helmets</h4>
-      <p>
-        Join our club and together we can Observe, Contribute, and<br /> Change the world for the better
-      </p>
-      <div class="icons">
-        <a href="mailto:thewhitehelmets.vitc@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-        <a href="https://www.instagram.com/twh_vitc/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/the-white-helmets-vit-chennai/" target="_blank"><i class="fa fa-linkedin"></i></a>
       </div>
-      <p><i class="fa fa-copyright"></i> Copyright <b>The White Helmets</b> | All Rights Reserved</p>
-    </section>
+      <br />
+      <!--vice president, general secretary - 2-->
+      <div class="row">
+        <div class="card" data-aos="fade-right">
+          <img src="image/dept/vice-pre.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/_manas09_?igshid=MzRlODBiNWFlZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Manas Choudhary</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Vice President
+            </p>
+            <p data-splitting="">
+              <br>Influencing and <br> empowering others and <br>inspiring trust and <br>confidence.<br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="image/dept/gen-sec.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/_.shrad_dhaa._?igshid=MzNlNGNkZWQ4Mg" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2 style="font-size: 23px;">Shradha Suman Jena</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              General Secretary
+            </p>
+            <p data-splitting="">
+              <br>Always ready to wrap the <br> teammates with respect,<br> dedication and passion<br> to make us
+              better<br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <!-- advisory, advisory, advisory - 3-->
+      <h1 class="role" data-aos="zoom-out">Advisory</h1>
+      <div class="row1">
+        <div class="card" data-aos="fade-right">
+          <img src="image/dept/adv-1.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="#" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Ishika Agarwal</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Advisory
+            </p>
+            <p data-splitting="">
+              <br>The worst mistakes are <br>the best advices one can <br>learn from.<br><br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-out">
+          <img src="image/dept/adv-2.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="#" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Shashank Pandey</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Advisory
+            </p>
+            <p data-splitting="">
+              <br>It's always the best <br>advice when it comes <br>with love, respect and <br>hope for success <br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="image/dept/adv-3.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="#" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Saanjhi Saraogi</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Advisory
+            </p>
+            <p data-splitting="">
+              <br>Never be scared to try <br>something new because if <br>you only stick to what you<br>are familiar
+              with, life will <br>become monotonous <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+      <h1 class="role" data-aos="zoom-out">Core Committee</h1>
+      <!--management, content, content - 3 -->
+      <div class="row1">
+        <div class="card" data-aos="fade-right">
+          <img src="image/dept/manage.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/aditi_srivastava20?igshid=OGQ5ZDc2ODk2ZA" target="_blank"
+                  class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Aditi Srivastava</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Management Head
+            </p>
+            <p data-splitting="">
+              <br>If you want to RUN the <br> DAY before the DAY RUNS <br> you, make management <br> your obsession
+              <br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-out">
+          <img src="image/dept/cont-1.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/abinaya_0702?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Abinaya</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Content Head
+            </p>
+            <p data-splitting="">
+              <br>Good content isn't about <br> storytelling. It's <br> about telling a true story <br> well <br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+          <img src="image/dept/cont-2.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/shinjinii.___?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Shinjini Paul</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Content Head
+            </p>
+            <p data-splitting="">
+              <br>Always create content <br> that reaches your <br> audience's audience <br><br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!--marketing, social, outreach  - 3 -->
+      <div class="row1" data-aos="fade-up">
+        <div class="card" data-aos="fade-down-right">
+          <img src="image/dept/market.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/tanmayb26?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Tanmay Bopache</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Marketing Head
+            </p>
+            <p data-splitting="">
+              <br>Successful marketing is <br> not about being first, it's <br> about being different <br><br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="zoom-out-down">
+          <img src="image/dept/social.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/_.aww.thor.wow._?igshid=OGQ5ZDc2ODk2ZA" target="_blank"
+                  class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2 style="font-size: 23px;">Atharva Deorukhkar</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Social Media Head
+            </p>
+            <p data-splitting="">
+              <br>Social media is not just <br> about creating content, <br> it's about creating <br> relationships
+              <br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-down-left">
+          <img src="image/dept/outr.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/_.chirag._.g?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Chirag Gupta</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Outreach Head
+            </p>
+            <p data-splitting="">
+              <br>Don't wait for some other <br> person or some other time. <br> We are the ones we've <br> been waiting
+              for. We are the <br> change that we seek
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- design, design - 2-->
+      <div class="row" data-aos="fade-up">
+        <div class="card" data-aos="fade-down-right">
+          <img src="image/dept/des-1.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/ashnasachdeva27?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Ashna Sachdeva</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Design Head
+            </p>
+            <p data-splitting="">
+              <br>Every great design <br> begins with an even <br> better story <br><br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-down-left">
+          <img src="image/dept/des-2.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://instagram.com/ughitskash?igshid=OGQ5ZDc2ODk2ZA" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="#" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="#" class="link1 tw1">
+                  <i class="ri-twitter-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Kashish Rajbhar</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Design Head
+            </p>
+            <p data-splitting="">
+              <br>Styles come and go. <br> Good design is a <br> language, not a style <br><br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!--Web Dev - 2-->
+      <h1 class="role" data-aos="zoom-out">Developers</h1>
+      <div class="row" data-aos="fade-up">
+        <div class="card" data-aos="fade-down-right">
+          <img src="image/dept/web-1.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://www.instagram.com/_thenameis_vinoth_/" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="https://www.linkedin.com/in/vinoth-kanna-m-m-235ab5228" target="_blank" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="https://github.com/vinothkanna273" target="_blank" class="link1 gh1">
+                  <i class="ri-github-fill"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.75s">
+                <a href="https:vinothkanna273.me" target="_blank" class="link1 wh1">
+                  <i class="ri-global-line"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Vinoth Kanna M M</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Web Developer
+            </p>
+            <p data-splitting="">
+              <br>There are two ways to write <br>error-free programs; <br> only the third one works<br><br><br>
+            </p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-down-left">
+          <img src="image/dept/web-2.webp" />
+          <div class="link-r">
+            <ul class="list1">
+              <li class="item1">
+                <a href="https://www.instagram.com/mohanraj.e28/" target="_blank" class="link1 ig1">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.25s">
+                <a href="https://www.linkedin.com/in/mohanraj-e-b4295b248" target="_blank" class="link1 li1">
+                  <i class="ri-linkedin-box-line"></i>
+                </a>
+              </li>
+              <li class="item1" style="--d: 0.5s">
+                <a href="https://github.com/MOHANRAJE28" target="_blank" class="link1 gh1">
+                  <i class="ri-github-fill"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text">
+            <h2>Mohanraj E</h2>
+            <p data-splitting="" style="font-size: 20px; font-weight: 700">
+              Web Developer
+            </p>
+            <p data-splitting="">
+              <br>Code is like humor. <br> When you have to explain it, <br> it's bad <br><br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <!-- JavaScript code -->
-    <!--loader-->
     <script>
-      window.addEventListener("load", () => {
-          const loader = document.querySelector(".loader");
-          loader.classList.add("loader--hidden");
-          loader.addEventListener("transitionend", () => {
-              document.body.removeChild(loader);
-          });
+      Splitting();
+    </script>
+  </section>
+
+  <section class="footer">
+    <div class="heading"><h4 class="interactable">The White Helmets</h4></div>
+    <p>
+      Join our club and together we can Observe, Contribute, and<br /> Change the world for the better
+    </p>
+    <div class="icons">
+      <a href="mailto:thewhitehelmets.vitc@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.instagram.com/twh_vitc/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/the-white-helmets-vit-chennai/" target="_blank"><i
+          class="fa fa-linkedin"></i></a>
+    </div>
+    <p><i class="fa fa-copyright"></i> Copyright <b>The White Helmets</b> | All Rights Reserved</p>
+  </section>
+
+  <!-- JavaScript code -->
+  <!--loader-->
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.querySelector(".loader");
+      loader.classList.add("loader--hidden");
+      loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
       });
+    });
   </script>
-    <!-- AOS -->
-    <script src="file/aos/aos.js"></script>
-    <script>
-      AOS.init({
+  <!-- AOS -->
+  <script src="file/aos/aos.js"></script>
+  <script>
+    AOS.init({
       duration: 1200,
       easing: 'ease-in-out',
       once: true,
       mirror: false
-      })
-    </script>
-    <!-- Functionalities -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.left = "0";
-      }
-      function hideMenu() {
-        navLinks.style.left = "-100%";
-      }
-      const btnEl = document.querySelector(".l-btn");
-      const toggleOptions = () => {
-        const wrapperEl = document.querySelector(".wrapper");
-        const iconEl = btnEl.querySelector("i");
+    })
+  </script>
+  <!-- Functionalities -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.left = "0";
+    }
+    function hideMenu() {
+      navLinks.style.left = "-100%";
+    }
+    const btnEl = document.querySelector(".l-btn");
+    const toggleOptions = () => {
+      const wrapperEl = document.querySelector(".wrapper");
+      const iconEl = btnEl.querySelector("i");
 
-        wrapperEl.classList.toggle("active");
+      wrapperEl.classList.toggle("active");
 
-        if (iconEl.classList.contains("ri-share-line")) {
-          iconEl.classList.replace("ri-share-line", "ri-close-line");
-        } else {
-          iconEl.classList.replace("ri-close-line", "ri-share-line");
-        }
-      };
-      btnEl.addEventListener("click", toggleOptions);
-    </script>
-  </body>
+      if (iconEl.classList.contains("ri-share-line")) {
+        iconEl.classList.replace("ri-share-line", "ri-close-line");
+      } else {
+        iconEl.classList.replace("ri-close-line", "ri-share-line");
+      }
+    };
+    btnEl.addEventListener("click", toggleOptions);
+  </script>
+</body>
+
 </html>
