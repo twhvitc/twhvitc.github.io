@@ -300,6 +300,9 @@ main {
 .card:hover .item1:nth-child(3) {
   transform: translateY(150px);
 }
+.card:hover .item1:nth-child(4) {
+  transform: translateY(190px);
+}
 .link1:hover {
   color: #fff;
   transition: background-color 0.5s;
@@ -323,6 +326,10 @@ main {
 }
 .gh1:hover {
   background-color: #212121;
+}
+.wh1:hover {
+  background-color: #1da1f2;
+  color: inherit;
 }
 @media screen and (min-width: 600px) and (max-width: 650px) {
   .link-r :is(.link1) {
